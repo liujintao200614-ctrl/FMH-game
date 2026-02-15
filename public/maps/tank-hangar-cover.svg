@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="sea" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#173a5b" />
+      <stop offset="100%" stop-color="#0f2a43" />
+    </linearGradient>
+    <linearGradient id="land" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5f8f4d" />
+      <stop offset="100%" stop-color="#4f7b42" />
+    </linearGradient>
+    <pattern id="waves" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M2 14 C7 9 11 9 16 14 C21 19 25 19 30 14" stroke="#7ac7f1" stroke-opacity="0.22" stroke-width="1.4" fill="none" />
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#06101b" flood-opacity="0.55" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#sea)" />
+  <rect width="1200" height="800" fill="url(#waves)" opacity="0.8" />
+
+  <!-- Coastline and beaches -->
+  <path d="M0 470 C140 430 260 450 360 400 C470 345 620 360 760 320 C925 272 1030 290 1200 240 L1200 800 L0 800 Z" fill="url(#land)" />
+  <path d="M0 510 C165 468 270 485 382 434 C502 382 637 400 780 356 C945 305 1046 325 1200 275 L1200 365 C1060 414 936 406 786 448 C647 487 503 468 380 523 C273 571 150 551 0 590 Z" fill="#c4ad75" opacity="0.95" />
+  <path d="M0 532 C168 490 273 507 385 456 C503 404 640 422 783 378 C947 327 1048 347 1200 297" stroke="#d7eaf9" stroke-opacity="0.7" stroke-width="6" fill="none" />
+
+  <!-- Resource nodes -->
+  <g opacity="0.92">
+    <circle cx="218" cy="560" r="11" fill="#e0bb64" />
+    <circle cx="432" cy="504" r="11" fill="#e0bb64" />
+    <circle cx="688" cy="442" r="11" fill="#e0bb64" />
+    <circle cx="918" cy="392" r="11" fill="#e0bb64" />
+  </g>
+
+  <!-- Turrets -->
+  <g filter="url(#shadow)">
+    <circle cx="340" cy="472" r="46" fill="#414d5c" />
+    <circle cx="340" cy="472" r="24" fill="#5f6f84" />
+    <rect x="336" y="425" width="8" height="58" fill="#2a3340" />
+
+    <circle cx="824" cy="362" r="42" fill="#3d4a59" />
+    <circle cx="824" cy="362" r="21" fill="#586980" />
+    <rect x="820" y="363" width="52" height="8" fill="#2a3340" />
+  </g>
+
+  <!-- Tanks -->
+  <g filter="url(#shadow)">
+    <g transform="translate(570 450) rotate(-14)">
+      <ellipse cx="0" cy="0" rx="46" ry="34" fill="#4f5660" />
+      <ellipse cx="0" cy="0" rx="27" ry="22" fill="#656e7b" />
+      <rect x="12" y="-5" width="66" height="10" rx="4" fill="#2d3440" />
+    </g>
+    <g transform="translate(210 608) rotate(8)">
+      <ellipse cx="0" cy="0" rx="44" ry="32" fill="#495160" />
+      <ellipse cx="0" cy="0" rx="25" ry="20" fill="#606978" />
+      <rect x="10" y="-5" width="58" height="10" rx="4" fill="#2d3440" />
+    </g>
+  </g>
+
+  <!-- Ambient glow -->
+  <circle cx="950" cy="130" r="220" fill="#66c3ff" fill-opacity="0.12" />
+  <circle cx="140" cy="160" r="180" fill="#7ed66f" fill-opacity="0.1" />
+
+  <text x="56" y="104" fill="#d7ecff" font-family="Orbitron, Rajdhani, sans-serif" font-size="42" font-weight="700" letter-spacing="2">
+    TANK HANGAR
+  </text>
+  <text x="58" y="140" fill="#9ec6e5" font-family="Rajdhani, sans-serif" font-size="22">
+    TOP-DOWN BATTLEFIELD PREVIEW
+  </text>
+</svg>

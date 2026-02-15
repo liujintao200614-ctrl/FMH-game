@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#05060d" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="FMH Arcade" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/pwa/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="/pwa/icon-192.png" />
+    <title>FMH Local Arcade</title>
+    <style>
+      html, body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background: #05060d;
+      }
+      #root {
+        width: 100%;
+        min-height: 100%;
+      }
+      #app-splash {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        color: #d9e8ff;
+        background:
+          radial-gradient(circle at 20% 20%, rgba(64, 130, 255, 0.24), transparent 38%),
+          radial-gradient(circle at 78% 70%, rgba(63, 196, 255, 0.2), transparent 35%),
+          linear-gradient(180deg, #05060d 0%, #090f1d 100%);
+        transition: opacity 300ms ease, visibility 300ms ease;
+      }
+      #app-splash.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+      }
+      #app-splash-logo {
+        width: 72px;
+        height: 72px;
+        border-radius: 18px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+      }
+      #app-splash-loading {
+        width: 150px;
+        height: 3px;
+        border-radius: 999px;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.15);
+      }
+      #app-splash-loading::after {
+        content: "";
+        display: block;
+        width: 45%;
+        height: 100%;
+        border-radius: 999px;
+        background: linear-gradient(90deg, #2f7dff 0%, #56c4ff 100%);
+        animation: splash-slide 900ms ease-in-out infinite;
+      }
+      @keyframes splash-slide {
+        0% { transform: translateX(-120%); }
+        100% { transform: translateX(320%); }
+      }
+    </style>
+  </head>
+  <body class="bg-black">
+    <div id="app-splash">
+      <img id="app-splash-logo" src="/pwa/icon-192.png" alt="FMH" />
+      <div>FMH Arcade 正在启动</div>
+      <div id="app-splash-loading"></div>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

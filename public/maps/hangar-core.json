@@ -1,0 +1,104 @@
+{
+  "compressionlevel": -1,
+  "height": 30,
+  "infinite": false,
+  "layers": [
+    {
+      "draworder": "topdown",
+      "id": 1,
+      "name": "collision",
+      "objects": [
+        {
+          "height": 320,
+          "id": 1,
+          "name": "core_block",
+          "properties": [
+            {
+              "name": "collide",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 320,
+          "x": 320,
+          "y": 320
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "draworder": "topdown",
+      "id": 2,
+      "name": "spawns",
+      "objects": [
+        { "id": 2, "name": "player_spawn", "type": "spawn", "x": 128, "y": 832, "width": 0, "height": 0, "rotation": 0, "visible": true },
+        { "id": 3, "name": "enemy_spawn_top", "type": "spawn", "x": 448, "y": 32, "width": 0, "height": 0, "rotation": 0, "visible": true },
+        { "id": 4, "name": "enemy_spawn_right", "type": "spawn", "x": 896, "y": 448, "width": 0, "height": 0, "rotation": 0, "visible": true },
+        { "id": 5, "name": "enemy_spawn_bottom", "type": "spawn", "x": 512, "y": 896, "width": 0, "height": 0, "rotation": 0, "visible": true },
+        { "id": 6, "name": "enemy_spawn_left", "type": "spawn", "x": 32, "y": 512, "width": 0, "height": 0, "rotation": 0, "visible": true }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "draworder": "topdown",
+      "id": 3,
+      "name": "objective",
+      "objects": [
+        {
+          "height": 0,
+          "id": 7,
+          "name": "capture_point",
+          "rotation": 0,
+          "type": "objective",
+          "visible": true,
+          "width": 0,
+          "x": 480,
+          "y": 480
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "draworder": "topdown",
+      "id": 4,
+      "name": "props",
+      "objects": [
+        { "height": 0, "id": 8, "name": "console_1", "rotation": 0, "type": "prop", "visible": true, "width": 0, "x": 192, "y": 192 },
+        { "height": 0, "id": 9, "name": "console_2", "rotation": 0, "type": "prop", "visible": true, "width": 0, "x": 768, "y": 192 },
+        { "height": 0, "id": 10, "name": "console_3", "rotation": 0, "type": "prop", "visible": true, "width": 0, "x": 192, "y": 768 },
+        { "height": 0, "id": 11, "name": "console_4", "rotation": 0, "type": "prop", "visible": true, "width": 0, "x": 768, "y": 768 }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true,
+      "x": 0,
+      "y": 0
+    }
+  ],
+  "nextlayerid": 5,
+  "nextobjectid": 12,
+  "orientation": "orthogonal",
+  "renderorder": "right-down",
+  "tiledversion": "1.10.2",
+  "tileheight": 32,
+  "tilesets": [],
+  "tilewidth": 32,
+  "type": "map",
+  "version": "1.10",
+  "width": 30
+}

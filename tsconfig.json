@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.node.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "baseUrl": "./src"
+  },
+  "include": ["src"],
+  "exclude": ["src/app/**/*", "src/lib/**/*", "src/hooks/useGameEcosystem.ts", "src/hooks/useUserProfile.ts", "src/hooks/useCrossGameData.ts", "src/components/GameDashboard.tsx", "src/components/PlayerStats.tsx"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

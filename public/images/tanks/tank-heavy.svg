@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="plateH" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c6ccd4" />
+      <stop offset="100%" stop-color="#9aa2ad" />
+    </linearGradient>
+    <linearGradient id="armorH" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6f7682" />
+      <stop offset="100%" stop-color="#515864" />
+    </linearGradient>
+    <linearGradient id="tubeH" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f5b45a" />
+      <stop offset="100%" stop-color="#e38a32" />
+    </linearGradient>
+  </defs>
+  <g stroke="#0a0a0a" stroke-width="16" stroke-linejoin="round" fill="none">
+    <!-- 重履带 -->
+    <rect x="60" y="206" width="96" height="170" rx="26" fill="#2a2f38"/>
+    <rect x="356" y="206" width="96" height="170" rx="26" fill="#2a2f38"/>
+    <circle cx="108" cy="246" r="28" fill="#d8dce1"/>
+    <circle cx="108" cy="326" r="28" fill="#d8dce1"/>
+    <circle cx="404" cy="246" r="28" fill="#d8dce1"/>
+    <circle cx="404" cy="326" r="28" fill="#d8dce1"/>
+    <circle cx="108" cy="246" r="12" fill="#cf1e26"/>
+    <circle cx="108" cy="326" r="12" fill="#cf1e26"/>
+    <circle cx="404" cy="246" r="12" fill="#cf1e26"/>
+    <circle cx="404" cy="326" r="12" fill="#cf1e26"/>
+    <!-- 车体厚装甲 -->
+    <rect x="120" y="182" width="272" height="210" rx="32" fill="url(#plateH)"/>
+    <rect x="148" y="208" width="216" height="170" rx="26" fill="#8c94a0"/>
+    <rect x="180" y="236" width="152" height="136" rx="20" fill="url(#armorH)"/>
+    <!-- 双短炮 + 盾 -->
+    <rect x="182" y="96" width="52" height="136" rx="14" fill="url(#tubeH)"/>
+    <rect x="278" y="96" width="52" height="136" rx="14" fill="url(#tubeH)"/>
+    <rect x="174" y="96" width="68" height="52" rx="16" fill="#2c323e"/>
+    <rect x="270" y="96" width="68" height="52" rx="16" fill="#2c323e"/>
+    <rect x="214" y="156" width="84" height="110" rx="18" fill="#f2b94c"/>
+    <!-- 前置防爆红块 -->
+    <rect x="172" y="310" width="56" height="60" rx="14" fill="#cf1e26"/>
+    <rect x="284" y="310" width="56" height="60" rx="14" fill="#cf1e26"/>
+    <rect x="204" y="344" width="104" height="44" rx="14" fill="#f2b94c"/>
+    <!-- 侧装甲贴片 -->
+    <rect x="136" y="268" width="32" height="72" rx="10" fill="#d8dce1"/>
+    <rect x="344" y="268" width="32" height="72" rx="10" fill="#d8dce1"/>
+  </g>
+</svg>

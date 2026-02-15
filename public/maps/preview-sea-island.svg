@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2f6e97"/>
+      <stop offset="100%" stop-color="#1c4768"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#sea)"/>
+  <rect y="150" width="960" height="28" fill="#6dc3ef" opacity="0.35"/>
+  <rect y="270" width="960" height="28" fill="#6dc3ef" opacity="0.35"/>
+  <rect y="390" width="960" height="28" fill="#6dc3ef" opacity="0.35"/>
+  <g fill="#c7b48b">
+    <rect x="42" y="210" width="190" height="120" rx="24"/>
+    <rect x="730" y="210" width="190" height="120" rx="24"/>
+    <rect x="355" y="108" width="250" height="84" rx="26"/>
+    <rect x="325" y="228" width="310" height="84" rx="30"/>
+    <rect x="355" y="348" width="250" height="84" rx="26"/>
+  </g>
+  <g fill="#76af63">
+    <rect x="92" y="240" width="92" height="62" rx="16"/>
+    <rect x="777" y="240" width="95" height="62" rx="16"/>
+    <rect x="420" y="130" width="120" height="38" rx="16"/>
+    <rect x="392" y="248" width="176" height="44" rx="18"/>
+    <rect x="420" y="369" width="120" height="38" rx="16"/>
+  </g>
+  <circle cx="462" cy="270" r="11" fill="#f0ca6b"/>
+  <circle cx="498" cy="270" r="11" fill="#f0ca6b"/>
+  <circle cx="534" cy="270" r="11" fill="#f0ca6b"/>
+  <rect x="68" y="48" width="150" height="76" rx="10" fill="#3a4f68"/>
+  <rect x="742" y="418" width="150" height="76" rx="10" fill="#3a4f68"/>
+  <text x="36" y="64" fill="#eaf7ff" font-family="Arial, sans-serif" font-size="34" font-weight="700">海上群岛</text>
+</svg>

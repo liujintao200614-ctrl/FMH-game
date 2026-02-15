@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8f5a3f"/>
+      <stop offset="100%" stop-color="#5d392c"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)"/>
+  <rect x="335" y="0" width="290" height="540" fill="#2d2020"/>
+  <rect x="440" y="0" width="80" height="540" fill="#241a1a"/>
+  <rect x="0" y="128" width="960" height="42" fill="#9f7b52"/>
+  <rect x="0" y="249" width="960" height="42" fill="#a7865b"/>
+  <rect x="0" y="370" width="960" height="42" fill="#9f7b52"/>
+  <rect x="420" y="112" width="120" height="74" rx="10" fill="#b9986f"/>
+  <rect x="420" y="233" width="120" height="74" rx="10" fill="#b9986f"/>
+  <rect x="420" y="354" width="120" height="74" rx="10" fill="#b9986f"/>
+  <circle cx="485" cy="270" r="20" fill="#f2c768"/>
+  <circle cx="390" cy="270" r="12" fill="#f2c768"/>
+  <circle cx="580" cy="270" r="12" fill="#f2c768"/>
+  <rect x="70" y="228" width="160" height="86" rx="10" fill="#414a61"/>
+  <rect x="730" y="228" width="160" height="86" rx="10" fill="#414a61"/>
+  <text x="36" y="62" fill="#fff0d9" font-family="Arial, sans-serif" font-size="34" font-weight="700">赤土裂谷</text>
+</svg>
